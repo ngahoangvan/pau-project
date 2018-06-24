@@ -80,7 +80,7 @@ export class NewsDashboardComponent implements OnInit {
     // getdata
     init() {
         this.newsService.getFeedback().subscribe((data) => {
-            console.log(data);
+            // console.log(data);
             this.news = data;
             this.numberOfBooks = this.news.length;
             this.limit = 6;
