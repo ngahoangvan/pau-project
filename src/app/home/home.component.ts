@@ -59,7 +59,8 @@ export class HomeComponent implements OnInit {
         //    this.traineritems = ROUTES.filter(traineritems => traineritems);
         this.home.getTopTrainer().subscribe(
             data => {this.traineritems = data.content
-            console.log(data);}
+            // console.log(data);
+        }
         );
 
         this.fun();
